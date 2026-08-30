@@ -27,6 +27,11 @@ export default defineNuxtConfig({
     }
   },
 
+  // GitHub Pages subfolder deployment - set app baseURL
+  app: {
+    baseURL: process.env.NUXT_PUBLIC_BASE_URL || '/'
+  },
+
   compatibilityDate: '2026-06-30',
 
   nitro: {
