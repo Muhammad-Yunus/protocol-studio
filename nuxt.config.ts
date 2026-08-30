@@ -1,9 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui'
   ],
+  ssr: false,
 
   devtools: {
     enabled: true
@@ -27,18 +29,6 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2026-06-30',
 
-  eslint: {
-    config: {
-      stylistic: {
-        commaDangle: 'never',
-        braceStyle: '1tbs'
-      }
-    }
-  },
-
-  // GitHub Pages - Static site generation
-  ssr: false,
-
   nitro: {
     prerender: {
       routes: ['/', '/index.html']
@@ -48,5 +38,14 @@ export default defineNuxtConfig({
   // GitHub Pages subfolder deployment
   vite: {
     base: process.env.NUXT_PUBLIC_BASE_URL || '/'
+  },
+
+  eslint: {
+    config: {
+      stylistic: {
+        commaDangle: 'never',
+        braceStyle: '1tbs'
+      }
+    }
   }
 })
