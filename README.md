@@ -14,7 +14,7 @@ Connect to serial devices, send and receive data in real-time with a retro termi
 [![pnpm](https://img.shields.io/badge/pnpm-11.x-lightgreen?logo=pnpm)](https://pnpm.io)
 
 
-<img src="docs/preview_app.png" alt="Protocol Studio Preview" width="70%"/>
+<img src="docs/preview_app.png" alt="Protocol Studio Preview" width="80%"/>
 </div>
 
 ---
@@ -39,7 +39,7 @@ Connect to serial devices, send and receive data in real-time with a retro termi
 ┌───────────────────────────────────────────────────────────────────────┐
 │                      Browser Client                                   │
 │  ┌──────────┐    ┌──────────┐    ┌──────────┐                         │
-│  │   App    │──▶ │ Layout   │──▶ │  Page    │                         │
+│  │   App    │──► │ Layout   │──► │  Page    │                         │
 │  │  .vue    │    │  .vue    │    │ index.vue│                         │
 │  └──────────┘    └──────────┘    └────┬─────┘                         │
 │                    ┌──────────────────┼────────────────────┐          │
