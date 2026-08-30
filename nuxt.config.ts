@@ -1,14 +1,19 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  // GitHub Pages subfolder deployment - set app baseURL
 
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui'
   ],
+
   ssr: false,
 
   devtools: {
     enabled: true
+  },
+  app: {
+    baseURL: process.env.NUXT_PUBLIC_BASE_URL || '/'
   },
 
   css: ['~/assets/css/main.css'],
@@ -25,11 +30,6 @@ export default defineNuxtConfig({
     public: {
       baseUrl: process.env.NUXT_PUBLIC_BASE_URL || '/'
     }
-  },
-
-  // GitHub Pages subfolder deployment - set app baseURL
-  app: {
-    baseURL: process.env.NUXT_PUBLIC_BASE_URL || '/'
   },
 
   compatibilityDate: '2026-06-30',
