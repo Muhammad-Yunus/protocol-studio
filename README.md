@@ -2,7 +2,7 @@
 
 # Protocol Studio
 
-<p>A modern browser-based **Serial UART Terminal** built with Nuxt UI v4 and the Web Serial API. <br> 
+<p>A modern browser-based <b>Serial UART Terminal</b> built with Nuxt UI v4 and the Web Serial API. <br> 
 Connect to serial devices, send and receive data in real-time with a retro terminal aesthetic.</p> 
 
 [![Nuxt 4](https://img.shields.io/badge/Nuxt-4.x-00DC82?logo=nuxt.js)](https://nuxt.com)
