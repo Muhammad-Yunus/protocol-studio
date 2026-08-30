@@ -15,6 +15,10 @@ Connect to serial devices, send and receive data in real-time with a retro termi
 
 
 <img src="docs/preview_app.png" alt="Protocol Studio Preview" width="80%"/>
+
+<br/>
+
+[![Try Protocol Studio](https://img.shields.io/badge/🚀%20Try%20Now-GO%20TO%20PROTOCOL%20STUDIO-00DC82?style=for-the-badge&logo=nuxt.js)](https://muhammad-yunus.github.io/protocol-studio/)
 </div>
 
 ---
