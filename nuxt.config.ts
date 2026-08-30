@@ -27,11 +27,6 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2026-06-30',
 
-  // GitHub Pages subfolder deployment
-  vite: {
-    base: process.env.NUXT_PUBLIC_BASE_URL || '/'
-  },
-
   eslint: {
     config: {
       stylistic: {
@@ -39,5 +34,19 @@ export default defineNuxtConfig({
         braceStyle: '1tbs'
       }
     }
+  },
+
+  // GitHub Pages - Static site generation
+  ssr: false,
+
+  nitro: {
+    prerender: {
+      routes: ['/', '/index.html']
+    }
+  },
+
+  // GitHub Pages subfolder deployment
+  vite: {
+    base: process.env.NUXT_PUBLIC_BASE_URL || '/'
   }
 })
